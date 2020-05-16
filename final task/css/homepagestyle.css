@@ -1,0 +1,236 @@
+body
+{
+    font-family: arial;
+    font-size: 14px;
+    background: #f8f8fa;
+}
+
+#wrapper1
+{
+    width: 1200px;
+    overflow: auto;
+    margin: 0 auto;
+}
+
+/* header */
+#header1
+{
+    width: auto;
+    overflow: auto;
+    background: #59b8cc;
+    border-radius: 8px;
+    margin-top: 10px;;
+
+}
+
+#header_top1
+{
+    width: auto;
+    overflow: auto;
+}
+
+.logo1
+{
+    width: 400px;
+    overflow: auto;
+    float: right;
+    margin: 10px;
+    color: white;
+    margin-top: 14px;
+    padding-left: 500px;
+
+}
+
+
+#menu_wrapper1
+{
+    width: 460px;
+    overflow: auto;
+    float: left;
+    margin: 10px;
+    
+    
+    
+}
+
+#menu1
+{
+    margin: 0;
+    padding: 0;
+    float: left;
+
+}
+
+#menu1 li
+{
+    list-style: none;
+    float: left;
+    padding-top: 2px;
+    
+}
+
+#menu1 li a
+{
+    padding: 10px;
+    
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+
+}
+
+#menu1 li a:hover
+{
+    background: #1f1f21;
+    border-radius: 5px;
+}
+#header_center
+{
+    width: auto;
+    overflow: auto;
+}
+
+#contentr1
+{
+    
+    margin: 20px auto;
+    margin-left:  10px;
+    padding: 7px;
+    border: 1px solid #cbcbcb;
+    float: right;    
+    width: 88%;
+
+}
+
+input
+{
+    margin: 5px;
+    
+    width: 95%;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#contentl1
+{
+    
+    margin: 20px auto;
+    border: 2px solid #cbcbcb;
+    float: left;
+    width: 10%;
+    
+}
+
+
+#photo1
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+#photo1 li
+{
+    list-style: none;
+    float: left;
+    padding-top: 2px;
+    padding-left: 7px;
+    
+}
+
+#photo1 li a
+{
+    padding: 4px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+
+}
+
+#photo1 li a:hover
+{
+    background: #59b8cc;
+    border-radius: 5px;
+}
+
+.tweet-box-content
+{
+    height: 200px;
+    
+    width: 100%;
+}
+
+.tweet-msg-content
+{
+    float: right;
+    overflow:hidden ;
+    width: 100%;
+    margin-top: 12px;;
+}
+.msg-area
+{
+    height: 60%;
+    display: block;
+    background-color: royalblue;
+    width: 100%;
+}
+
+
+.toolbar-area
+{
+    height:40%;
+    display: block;
+    background: rosybrown;
+    width: 100%;
+}
+
+.single-blog
+{
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.single-blog img
+{
+    width: 100%;
+}
+.blog-meta
+{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.single-blog span
+{
+    float: right;
+    font-size: 12px;
+    color: cornflowerblue;
+}
+
+.blog-text
+{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.comment-btn
+{
+    background-color: #59b8cc ;
+    padding: 5px 12px 8px;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+    border: none!important;
+}
+
+.comment-btn:hover
+{
+    background-color: #59b8cc ;
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html  lang="ar" dir="rtl">
+<head>
+    <title>Login Page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    
+
+</head>
+<body>
+
+    <div class="signin">
+        <form method="POST" action="index.php" onsubmit="return validate()" name="vform">
+            <h2>تسجيل الدخول</h2>
+            <input type="text" name="phonenumber" for="phonenumber" onkeypress="isInputNumber(event)"  placeholder="رقم الهاتف">
+            <div id="phonenumber_error" class="val_error"></div>
+            <input type="password" name="password"  for="password" placeholder="كلمة المرور">
+            <div id="password_error" class="val_error"></div><br><br>
+            <a href=""><div class="buttonn"><input type="submit" name="register" value="تسجيل الدخول"></div> </a><br><br>
+            
+
+            <div id="container">
+                    
+                    <a href="#" style="margin-right: 0px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">هل نسيت كلمة المرور؟ </a>        
+            </div><br><br><br><br><br><br>
+
+
+            هل تمتلك حسابا؟ <a href="signup.html">&nbsp;حساب جديد  </a>
+            
+        </form>
+    </div>
+   <!-- <script>
+            function validateForm() {
+              var x = document.forms["myForm"]["fname"].value;
+              if (x == "" || x == null) {
+                alert("يجب ملئ جميع الحقول");
+                return false;
+              }
+            }
+            </script>-->
+   
+
+
+</body>
+</html>
+
+<!--adding js-->
+<script type="text/javascript">
+//getting all input text object
+var phonenumber = document.forms["vform"]["phonenumber"];
+var password = document.forms["vform"]["password"];
+//getting all error display object
+var phonenumber_error = document.getElementById("phonenumber_error");
+var password_error = document.getElementById("password_error");
+
+//setting all event listeners
+phonenumber.addEventListener("blur" , phonenumberVerify, true);
+password.addEventListener("blur" , passwordVerify, true);
+
+//validation function
+function validate(){
+    //username validation
+    if (phonenumber.value == "") {
+        phonenumber.style.border = " 1px solid red";
+        phonenumber_error.textContent = "رقم الهاتف مطلوب";
+        phonenumber.focus();
+        return false;
+    }
+    //password validation
+    if
+    (password.value == "") {
+        password.style.border = " 1px solid red";
+        password_error.textContent = "كلمة المرور مطلوبة";
+        password.focus();
+        return false;
+    } 
+}
+
+//event handler functiond
+function phonenumberVerify(){
+    if (phonenumber.value != ""){
+        phonenumber.style.border = "1px solid #5E6E66";
+        phonenumber_error.innerHTML ="";
+        return true;
+    }
+}
+
+function passwordVerify(){
+    if (password.value != ""){
+        password.style.border = "1px solid #5E6E66";
+        password_error.innerHTML ="";
+        return true;
+    }
+}
+
+function isInputNumber(evt){
+    var ch = String.fromCharCode(evt.which);
+
+    if(!(/[0-9]/.test(ch))){
+        evt.preventDefault();
+    }
+}
+
+//ajax
+
+	document.getElementById("add-post").addEventListener('submit',addPost);
+	document.getElementById("getPosts").addEventListener('click',getPosts);
+
+
+
+//GetUserName
+	 	  function getPosts(e){
+			e.preventDefault();
+
+let phonenumber = document.getElementById('phonenumber').value;
+
+let password = document.getElementById('passwoord').value;
+
+
+
+  fetch("رابط الباك يدزه", {
+  method:'POST',
+  headers: {
+	  "Content-Type": "application/json" 
+
+  },
+  
+  body:JSON.stringify({منالباك:phonenumber,منالباك:password})
+})
+.then((res) => res.json())
+
+.then((data) => console.log(data))
+
+.catch((err)=>console.log(err))
+	 }
+
+
+	
+	
+</script>

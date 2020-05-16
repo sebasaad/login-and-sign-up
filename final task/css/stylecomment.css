@@ -1,0 +1,51 @@
+.comments .content{
+    overflow: hidden;
+}
+
+.comments .content .picture{
+    float: left;
+    width: 8%;
+
+}
+
+.comments .content .picture img{
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.comments .content .name{
+    padding: 20px;
+    float: left;
+    width: 92%;
+}
+
+.comments .content .name p{
+ border: 1px solid #cbcbcb;
+ padding: 10px;
+ border-radius: 5px;
+ width: 70%;
+ 
+
+}
+
+.post-comment{
+    padding-left: 20px;
+    
+
+}
+
+.post-comment .write input[type=text]{
+    width: 67.5%;
+float: left;
+border: 1px solid #cbcbcb;
+    border-radius: 5px;
+
+}
+
+.post-comment .post input{
+float: left;
+    border-radius: 5px;
+    margin-left: 4px;
+
+}
